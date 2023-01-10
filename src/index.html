@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rostfan</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <dialog id="favDialog">
+        <form
+          id="contact"
+          action=""
+          name="main"
+          method="dialog"
+          class=""
+          novalidate
+        >
+          <label for="" class="data_form" id="label_form"></label>
+          <p class="text_form" id="text_form"></p>
+          <fieldset class="fiel_text">
+            <input
+              placeholder="+7 (999) 999-99-99"
+              type="tel"
+              maxlength="16"
+              class="tel_input modal_input"
+              id="modal_tel"
+              autofocus
+              required
+            />
+            <span class="error_tel" aria-live="polite"></span>
+          </fieldset>
+          <fieldset class="fiel_text">
+            <input
+              class="name_input modal_input"
+              placeholder="Имя"
+              id="modal_name"
+              type="text"
+              pattern="^[А-Яа-яЁё\s]+$"
+              minlength="2"
+              required
+            />
+            <span class="error_name" aria-live="polite"></span>
+          </fieldset>
+
+          <fieldset class="fiel_text">
+            <textarea
+              class="modal_input"
+              id="modal_textarea"
+              rows="6"
+              cols="30"
+              placeholder="Введите ваше сообщение ..."
+              maxlength="350"
+              required
+            ></textarea>
+            <span class="error" aria-live="polite"></span>
+          </fieldset>
+          <fieldset>
+            <button
+              name="submit"
+              type="submit"
+              id="contact-submit"
+              data-submit="...Sending"
+            >
+              отправить
+            </button>
+          </fieldset>
+        </form>
+      </dialog>
+      <p class="modal_btn" id="show_btn">
+        <button id="showDialog">Show Modal Window</button>
+      </p>
+    </div>
+  </body>
+  <script src="./sctipt/script.js"></script>
+</html>
